@@ -1,4 +1,4 @@
-package com.example.coffeeapptest;
+package com.example.coffeeorderingapp;
 
 import org.junit.Test;
 

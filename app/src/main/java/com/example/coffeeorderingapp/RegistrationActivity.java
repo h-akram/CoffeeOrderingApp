@@ -1,4 +1,4 @@
-package com.example.coffeeapptest;
+package com.example.coffeeorderingapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;

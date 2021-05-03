@@ -1,4 +1,4 @@
-package com.example.coffeeapptest;
+package com.example.coffeeorderingapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
