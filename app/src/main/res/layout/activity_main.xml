@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gfg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee App - Firebase"
+        android:textSize="20dp"
+        />
+</RelativeLayout>
+
