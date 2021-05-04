@@ -21,6 +21,14 @@
         android:textColor="#3a1909"
         android:textSize="50sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/refita"
+        android:text="New user? Sign up now!"
+        android:textColor="#3a1909"
+        android:textSize="20sp" />
+
     <!-- Edit text for email -->
     <EditText
         android:id="@+id/email"
