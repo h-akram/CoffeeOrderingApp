@@ -74,14 +74,14 @@ public class RegistrationActivity extends AppCompatActivity {
         // Validations for input email and password
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
-                    "Please enter email!!",
+                    "Please enter an email.",
                     Toast.LENGTH_LONG)
                     .show();
             return;
         }
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(getApplicationContext(),
-                    "Please enter password!!",
+                    "Please enter a password.",
                     Toast.LENGTH_LONG)
                     .show();
             return;
@@ -115,7 +115,7 @@ public class RegistrationActivity extends AppCompatActivity {
                             // Registration failed
                             Toast.makeText(
                                     getApplicationContext(),
-                                    "Registration failed!!"
+                                    "Registration failed."
                                             + " Please try again later",
                                     Toast.LENGTH_LONG)
                                     .show();
