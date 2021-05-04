@@ -24,6 +24,10 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressbar;
 
     private FirebaseAuth mAuth;
+
+    View view;
+    private Button newUser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -44,6 +48,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 loginUserAccount();
+            }
+        });
+
+        newUser = findViewById(R.id.redirect_signup);
+        newUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, RegistrationActivity.class);
+                startActivity(i);
             }
         });
     }
