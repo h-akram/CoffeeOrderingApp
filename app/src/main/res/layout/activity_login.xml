@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D6CAC4"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".LoginActivity">
@@ -29,7 +29,8 @@
         android:fontFamily="@font/refita"
         android:text="Sign in to earn rewards!"
         android:textColor="#3a1909"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:paddingBottom="25dp"/>
 
     <!-- Edit text for email -->
     <EditText
@@ -49,14 +50,22 @@
         android:inputType="textPassword" />
 
     <!-- Button for Login with text "Login" -->
+
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#3a1909"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
         android:fontFamily="@font/times_sans_serif"
         android:text="Login"
-        android:textFontWeight="700"/>
+        android:textFontWeight="700" />
+
+    <Button
+        android:id="@+id/redirect_signup"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/times_sans_serif"
+        android:text="New user?"
+        android:textFontWeight="700" />
 
     <!-- ProgressBar for Loading Time -->
     <ProgressBar
