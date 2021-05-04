@@ -10,7 +10,8 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:background="#998378">
 
     <!-- TextView for heading -->
     <TextView
@@ -42,8 +43,10 @@
         android:id="@+id/btnregister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
-        android:fontFamily="@font/times_sans_serif"/>
+        android:background="#3a1909"
+        android:backgroundTint="3a1909"
+        android:fontFamily="@font/times_sans_serif"
+        android:text="Register" />
 
     <!-- ProgressBar for loading time -->
     <ProgressBar
