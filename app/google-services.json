@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "674318621104",
-    "project_id": "coffeeapptest-23684",
-    "storage_bucket": "coffeeapptest-23684.appspot.com"
+    "project_number": "520336190229",
+    "project_id": "coffeeorderingapp-43107",
+    "storage_bucket": "coffeeorderingapp-43107.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:674318621104:android:e60f76e98bc8d8b2bc5e75",
+        "mobilesdk_app_id": "1:520336190229:android:07eac6a3228e12918a971c",
         "android_client_info": {
-          "package_name": "com.example.coffeeapptest"
+          "package_name": "com.example.coffeeorderingapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "674318621104-ocvdjuilggs4apusgvpi53vt1l9ho1g1.apps.googleusercontent.com",
+          "client_id": "520336190229-qe4siteo54rro7jimui74rfnib577vmi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBYth9084Hjj_gAsyb3ogpknkiXAG1D1eQ"
+          "current_key": "AIzaSyDT9lg4gnzsjtbPl1XcPLYJ7NJ1Rmhh_jU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "674318621104-ocvdjuilggs4apusgvpi53vt1l9ho1g1.apps.googleusercontent.com",
+              "client_id": "520336190229-qe4siteo54rro7jimui74rfnib577vmi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
