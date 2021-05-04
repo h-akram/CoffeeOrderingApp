@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView geeksforgeeks;
+    private TextView CoffeeOrder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // initialising all views through id defined above
-        geeksforgeeks = findViewById(R.id.gfg);
-        geeksforgeeks.setText(
-                "GeeksForGeeks(Firebase Authentication)");
+        CoffeeOrder = findViewById(R.id.co);
+        CoffeeOrder.setText(
+                "Order your coffee now!");
     }
 }
 
