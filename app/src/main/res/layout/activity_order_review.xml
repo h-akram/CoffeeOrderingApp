@@ -100,29 +100,29 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_sugar" />
 
     <Button
-        android:id="@+id/button_yes"
+        android:id="@+id/button_no"
         android:layout_width="150dp"
         android:layout_height="45dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/times_sans_serif"
-        android:text="Yes"
+        android:text="No"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_continue" />
 
     <Button
-        android:id="@+id/button_no"
+        android:id="@+id/button_yes"
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/times_sans_serif"
-        android:text="No"
+        android:text="Yes"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/button_yes"
+        app:layout_constraintStart_toEndOf="@+id/button_no"
         app:layout_constraintTop_toBottomOf="@+id/textView_continue" />
 
 
