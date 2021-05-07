@@ -1,16 +1,99 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6CAC4"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/espresso_machine" />
+
     <TextView
-        android:id="@+id/co"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coffee App - Firebase"
-        android:textSize="20dp"
-        />
-</RelativeLayout>
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/refita"
+        android:text="@string/espresso"
+        android:textColor="#3a1909"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text=" "
+        android:textColor="#3a1909"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_capp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/times_sans_serif"
+        android:textFontWeight="700"
+        android:text="Cappuccino"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button_frapp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/times_sans_serif"
+        android:text="Frappuccino"
+        android:textFontWeight="700"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/button_capp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_ameri"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/times_sans_serif"
+        android:textFontWeight="700"
+        android:text="Americano"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_capp" />
+
+    <Button
+        android:id="@+id/button_macch"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/times_sans_serif"
+        android:textFontWeight="700"
+        android:text="Macchiato"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/button_ameri"
+        app:layout_constraintTop_toBottomOf="@+id/button_frapp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
