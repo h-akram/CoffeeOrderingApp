@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/times_sans_serif"
-        android:hint="Enter your Email" />
+        android:hint="@string/enter_email" />
 
     <!-- Edit text for password -->
     <EditText
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/times_sans_serif"
-        android:hint="Enter your Password"
+        android:hint="@string/enter_password"
         android:inputType="textPassword" />
 
     <!-- Button for Login with text "Login" -->

@@ -25,8 +25,8 @@
         android:id="@+id/imageView5"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/coffee" />

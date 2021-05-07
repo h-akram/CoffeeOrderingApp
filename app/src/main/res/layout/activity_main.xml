@@ -11,7 +11,7 @@
         android:id="@+id/imageView3"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,13 +21,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="37dp"
         android:fontFamily="@font/refita"
         android:text="@string/espresso"
-        android:textColor="#3a1909"
         android:textAlignment="center"
+        android:textColor="#3a1909"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -53,7 +53,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Cappuccino"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -66,7 +66,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:text="Frappuccino"
         android:textFontWeight="700"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/button_capp"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -79,7 +79,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Americano"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_capp" />
 
@@ -92,7 +92,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Macchiato"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/button_ameri"
         app:layout_constraintTop_toBottomOf="@+id/button_frapp" />
 
