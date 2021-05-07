@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CoffeeOrderingApp</string>
+    <string name="espresso">Pick an espresso type:</string>
 </resources>
