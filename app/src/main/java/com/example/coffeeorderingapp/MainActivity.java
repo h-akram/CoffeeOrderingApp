@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity  {
 
-    private TextView CoffeeOrder;
+    //private TextView CoffeeOrder;
     String coffee_type = "";
 
     //elements
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity  {
                         coffee_type = "Cappuccino";
                         Log.i("Button Pressed", coffee_type);
                         Intent i = new Intent(MainActivity.this, SugarOptionActivity.class);
-                        i.putExtra("coffee_type", coffee_type);
+                        i.putExtra("Key_Coffee", coffee_type);
                         startActivity(i);
                     }
                 }
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity  {
                         coffee_type = "Frappuccino";
                         Log.i("Button Pressed", coffee_type);
                         Intent i = new Intent(MainActivity.this, SugarOptionActivity.class);
-                        i.putExtra("coffee_type", coffee_type);
+                        i.putExtra("Key_Coffee", coffee_type);
                         startActivity(i);
                     }
                 }
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity  {
                         coffee_type = "Americano";
                         Log.i("Button Pressed", coffee_type);
                         Intent i = new Intent(MainActivity.this, SugarOptionActivity.class);
-                        i.putExtra("coffee_type", coffee_type);
+                        i.putExtra("Key_Coffee", coffee_type);
                         startActivity(i);
                     }
                 }
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity  {
                         coffee_type = "Macchiato";
                         Log.i("Button Pressed", coffee_type);
                         Intent i = new Intent(MainActivity.this, SugarOptionActivity.class);
-                        i.putExtra("coffee_type", coffee_type);
+                        i.putExtra("Key_Coffee", coffee_type);
                         startActivity(i);
                     }
                 }
