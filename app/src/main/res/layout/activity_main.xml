@@ -53,7 +53,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Cappuccino"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -66,7 +66,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:text="Frappuccino"
         android:textFontWeight="700"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/button_capp"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -79,7 +79,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Americano"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_capp" />
 
@@ -92,7 +92,7 @@
         android:fontFamily="@font/times_sans_serif"
         android:textFontWeight="700"
         android:text="Macchiato"
-        android:textSize="15sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/button_ameri"
         app:layout_constraintTop_toBottomOf="@+id/button_frapp" />
 
