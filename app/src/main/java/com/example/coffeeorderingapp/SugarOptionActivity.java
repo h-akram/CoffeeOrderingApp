@@ -11,6 +11,7 @@ import android.widget.Button;
 public class SugarOptionActivity extends AppCompatActivity {
 
     String sugar_quantity = "";
+    String coffee_type = "";
 
     //elements
     Button btnLow;
@@ -27,14 +28,25 @@ public class SugarOptionActivity extends AppCompatActivity {
         btnMedium = findViewById(R.id.button_medium);
         btnHigh = findViewById(R.id.button_high);
 
+        // Get Coffee type value as intent extras from Sugar option activity
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            coffee_type = extras.getString("Key_Coffee");
+            //The key argument here must match that used in the other activity
+        }
+        Log.i("Sugar_Options_page__Coffee_type", coffee_type);
+
+
         btnLow.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        sugar_quantity = "Low";
+                        sugar_quantity = "Easy";
                         Log.i("Button Pressed", sugar_quantity);
-                        Intent i = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
-                        startActivity(i);
+                        Intent intent = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
+                        intent.putExtra("Key_Coffee",coffee_type);
+                        intent.putExtra("Key_Sugar",sugar_quantity);
+                        startActivity(intent);
                     }
                 }
         );
@@ -42,10 +54,12 @@ public class SugarOptionActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        sugar_quantity = "Medium";
+                        sugar_quantity = "Regular";
                         Log.i("Button Pressed", sugar_quantity);
-                        Intent i = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
-                        startActivity(i);
+                        Intent intent = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
+                        intent.putExtra("Key_Coffee",coffee_type);
+                        intent.putExtra("Key_Sugar",sugar_quantity);
+                        startActivity(intent);
                     }
                 }
         );
@@ -53,10 +67,12 @@ public class SugarOptionActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        sugar_quantity = "High";
+                        sugar_quantity = "Extra";
                         Log.i("Button Pressed", sugar_quantity);
-                        Intent i = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
-                        startActivity(i);
+                        Intent intent = new Intent(SugarOptionActivity.this, OrderReviewActivity.class);
+                        intent.putExtra("Key_Coffee",coffee_type);
+                        intent.putExtra("Key_Sugar",sugar_quantity);
+                        startActivity(intent);
                     }
                 }
         );
