@@ -13,9 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeOrderingApp">
-        <activity android:name=".SugarOptionActivity"/>
-        <activity android:name=".OrderReviewActivity" />
-        <activity android:name=".OrderConfirmationActivity" />
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,27 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MapsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".RegistrationActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".MapsActivity"/>
+        <activity android:name=".SugarOptionActivity"/>
+        <activity android:name=".OrderReviewActivity" />
+        <activity android:name=".OrderConfirmationActivity" />
     </application>
 
 </manifest>
