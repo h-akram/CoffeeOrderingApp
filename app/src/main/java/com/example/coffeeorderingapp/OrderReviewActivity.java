@@ -30,13 +30,18 @@ public class OrderReviewActivity extends AppCompatActivity {
         btnYes = findViewById(R.id.button_yes);
         btnNo = findViewById(R.id.button_no);
 
-        //coffee_type = getIntent().getStringExtra("coffee_type");
-        Log.i("View Coffee", coffee_type);
-        viewCoffee.setText("Americano");
+        // Get sugar value & coffee type as intent extras from Sugar option activity
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            coffee_type = extras.getString("Key_Coffee");
+            sugar_quantity = extras.getString("Key_Sugar");
+            //The key argument here must match that used in the other activity
 
-        //sugar_quantity = getIntent().getStringExtra("sugar_quantity");
-        Log.i("View Coffee", sugar_quantity);
-        viewSugar.setText("Low");
+            Log.i("Reivew_Coffee", coffee_type);
+            viewCoffee.setText(coffee_type);
+            Log.i("Review_Sugar", sugar_quantity);
+            viewSugar.setText(sugar_quantity);
+        }
 
         btnYes.setOnClickListener(
                 new View.OnClickListener() {
@@ -44,6 +49,7 @@ public class OrderReviewActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Log.i("Button Yes", "Pressed");
                         Intent i = new Intent(OrderReviewActivity.this, OrderConfirmationActivity.class);
+                        i.putExtra("Key_Coffee", coffee_type);
                         startActivity(i);
                     }
                 }
