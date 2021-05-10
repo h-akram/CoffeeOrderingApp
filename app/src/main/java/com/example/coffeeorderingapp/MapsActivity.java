@@ -18,6 +18,13 @@ import androidx.core.content.ContextCompat;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -157,4 +164,55 @@ public class MapsActivity extends AppCompatActivity implements LocationListener 
                 break;
         }
     }
+
+    public void onMapReady(GoogleMap googleMap) {
+        // [START_EXCLUDE silent]
+        // Add a marker in Sydney, Australia,
+        // and move the map's camera to the same location.
+        // [END_EXCLUDE]
+        LatLng sbux = new LatLng(41.8308138,-87.6270885);
+        googleMap.addMarker(new MarkerOptions()
+                .position(sbux)
+                .title("Starbucks"));
+        // [START_EXCLUDE silent]
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sbux));
+
+        LatLng mickeyd = new LatLng(41.8308352,-87.6211466);
+        googleMap.addMarker(new MarkerOptions()
+                .position(mickeyd)
+                .title("McDonald's"));
+        // [START_EXCLUDE silent]
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(mickeyd));
+
+        LatLng redline = new LatLng(41.834571838378906,-87.632568359375);
+        googleMap.addMarker(new MarkerOptions()
+                .position(redline)
+                .title("Red Line @ Stix n Brix"));
+        // [START_EXCLUDE silent]
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(redline));
+
+        googleMap.setMinZoomPreference(14.0f);
+        googleMap.setMaxZoomPreference(22.0f);
+        // [END_EXCLUDE]
+    }
+
+    /*public void onMapReady(GoogleMap googleMap) {
+        // [START_EXCLUDE silent]
+        // Add a marker in Sydney, Australia,
+        // and move the map's camera to the same location.
+        // [END_EXCLUDE]
+        LatLng sbux = new LatLng(41.831, -87.627);
+        LatLng sbux2 = new LatLng(-87.627, 41.831);
+        googleMap.addMarker(new MarkerOptions()
+                .position(sbux)
+                .title("Marker in Sydney"));
+        // [START_EXCLUDE silent]
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sbux));
+
+        googleMap.addMarker(new MarkerOptions()
+                .position(sbux2)
+                .title("sbux"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sbux2));
+        // [END_EXCLUDE]
+    }*/
 }
